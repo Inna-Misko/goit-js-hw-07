@@ -1,0 +1,28 @@
+
+.img-list {
+display: block;
+width: 600px;
+height: 500px;
+margin-bottom: 10px;
+}
+
+.item {
+    list-style: none;
+}
+
+.counter-div {
+    margin-bottom: 25px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+  margin-bottom: 30px;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
