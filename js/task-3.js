@@ -17,20 +17,9 @@ const images = [
 ];
 
 const galleryRef = document.querySelector('#gallery')
-
 const createList = images.map(image => {
-  // list.classList.add('item')
   const list =  `<li class="item"><img class="img-list" src="${image.url}" alt="${image.alt}"></mg></li>`
   return list
-
-
-  //  решение 2
-  // const imgRef = document.createElement('img')
-  //  imgRef.classList.add('img-list')
-  // imgRef.setAttribute('src', image.url)
-  // imgRef.setAttribute('alt', Image.alt)
-  // list.append(imgRef)
-  // return list
   });
 const finalList = createList.join(' ')
 galleryRef.insertAdjacentHTML('afterbegin', finalList)
