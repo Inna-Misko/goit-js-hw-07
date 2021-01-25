@@ -17,15 +17,23 @@ const images = [
 ];
 
 const galleryRef = document.querySelector('#gallery')
-const createList = images.map(image => {
-  const list =  `<li class="item"><img class="img-list" src="${image.url}" alt="${image.alt}"></mg></li>`
+// const createList = images.map(image => {
+//   const list =  `<li class="item"><img class="img-list" src="${image.url}" alt="${image.alt}"></mg></li>`
+//   return list
+//   });
+// const finalList = createList.join(' ')
+// galleryRef.insertAdjacentHTML('afterbegin', finalList)
+
+
+const createList = images.map(image => {  
+const list = document.createElement('li')
+const img = document.createElement('img');
+  img.setAttribute('src', image.url);
+  img.setAttribute('alt', image.alt)
+  img.classList.add('img-list')
+list.append(img)
   return list
-  });
-const finalList = createList.join(' ')
-galleryRef.insertAdjacentHTML('afterbegin', finalList)
+})
 
 
-
-
-
-
+galleryRef.append(...createList)

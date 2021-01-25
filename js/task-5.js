@@ -3,10 +3,11 @@ const nameOutputRef = document.querySelector('#name-output')
 
 inputNameRef.addEventListener('input', editText)
   
-function editText(even) {
+function editText(event) {
 
-    nameOutputRef.textContent=even.target.value;
+    nameOutputRef.textContent= event.target.value;
     if (nameOutputRef.textContent ==='') {
         nameOutputRef.textContent = 'незнакомец'
     }
 }
+

@@ -1,6 +1,7 @@
 const decrBtn = document.querySelector('.decr');
 const incrBtn = document.querySelector('.incr');
-const value = document.getElementById("value")
+const value = document.querySelector('#value');
+
 let counterValue = 0;
 
 const decrement = () => {
@@ -15,5 +16,5 @@ const increment = () => {
 };
 incrBtn.addEventListener('click', increment);
 
-const divRef = document.querySelector('#counter')
-divRef.classList.add('counter-div')
+
+

@@ -15,3 +15,6 @@ const createList = ingredients.map((ingrid) => {
 });
 
 ulList.append(...createList)
+
+
+
